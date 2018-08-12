@@ -1,0 +1,8 @@
+{
+  "name": "Express-MySQL-board",
+  "version": "1.0.0",
+  "description": "simple bulletin board app. Express framework, mysql",
+  "main": "index.js",
+  "author": "rontend",
+  "license": "MIT"
+}
