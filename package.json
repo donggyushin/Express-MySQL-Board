@@ -4,5 +4,12 @@
   "description": "simple bulletin board app. Express framework, mysql",
   "main": "index.js",
   "author": "rontend",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "multer": "^1.3.1",
+    "mysql": "^2.16.0"
+  },
+  "eslint.packageManager": "yarn"
 }

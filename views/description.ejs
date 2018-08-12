@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>main</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        button {
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            <a href="/">Main</a>
+        </h1>
+        <ul>
+
+            <% for(i = 0 ; i < topics.length ; i ++) { %>
+                <li>
+                    <a href='/topic/<%=topics[i].id%>'>
+                        <%=topics[i].title%>
+                    </a>
+                    <span><a href="/topic/delete/<%=topics[i].id%>">delete</a></span>
+                    <span><a href="/topic/update/<%=topics[i].id%>">edit</a> </span>
+                </li>
+                <%}%>
+
+        </ul>
+        <h2><%=topic[0].title%></h2>
+        <span><%=topic[0].author%></span>
+        <p><%=topic[0].description%></p>
+        <button><a href="/topic/write">new</a></button>
+    </div>
+</body>
+
+</html>
